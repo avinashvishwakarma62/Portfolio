@@ -1,0 +1,13 @@
+/* Temporary holding-page style for pages not yet built */
+.placeholder-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  text-align: center;
+}
+.placeholder-hero .wrap { max-width: 640px; margin: 0 auto; }
+.placeholder-hero .eyebrow-tag { justify-content: center; margin-bottom: 1.4rem; }
+.placeholder-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1.1rem; }
+.placeholder-hero p { color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 2.2rem; }
+.placeholder-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }

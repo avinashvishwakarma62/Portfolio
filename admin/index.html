@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Avinash Vishwakarma Portfolio</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/themes.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="ambient" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<div class="login-screen">
+  <div class="login-card">
+    <div class="login-mark">
+      <span class="badge-dot"></span>
+      <span>Avinash.dev — Admin</span>
+    </div>
+
+    <h1>Sign in</h1>
+    <p>Manage every page of your portfolio from one place.</p>
+
+    <div class="login-demo-box">
+      <strong>Demo login (for testing):</strong><br>
+      Username: <code>admin</code><br>
+      Password: <code>Admin@123</code><br>
+      Please change this from Account &amp; Security after your first login.
+    </div>
+
+    <div class="login-error" id="login-error">Incorrect username or password. Please try again.</div>
+
+    <form id="login-form">
+      <div class="admin-field">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" autocomplete="username" placeholder="admin">
+      </div>
+      <div class="admin-field">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" autocomplete="current-password" placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn-admin btn-admin-primary">Log In to Admin Panel</button>
+    </form>
+
+    <span class="login-back">&larr; <a href="../index.html">Back to the live website</a></span>
+  </div>
+</div>
+
+<script src="../assets/js/site-data.js"></script>
+<script src="auth.js"></script>
+<script>
+  document.documentElement.setAttribute('data-theme', getSiteData().theme || 'charcoal-orange');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (isLoggedIn()) {
+      window.location.href = 'dashboard.html';
+      return;
+    }
+
+    const form = document.getElementById('login-form');
+    const errorBox = document.getElementById('login-error');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const username = document.getElementById('login-username').value.trim();
+      const password = document.getElementById('login-password').value;
+
+      if (attemptLogin(username, password)) {
+        window.location.href = 'dashboard.html';
+      } else {
+        errorBox.classList.add('is-visible');
+      }
+    });
+  });
+</script>
+</body>
+</html>

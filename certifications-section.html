@@ -1,0 +1,85 @@
+<!-- ============================================================
+     CERTIFICATIONS SECTION
+     Drop this <section> into any page's <main>, wherever you
+     want it to appear (e.g. on achievements.html below the
+     timeline, or on its own new page).
+
+     Before use:
+     1. Link the stylesheet in that page's <head>, after base.css
+        and layout.css:
+          <link rel="stylesheet" href="assets/css/certifications.css">
+     2. Copy certifications.css into your assets/css/ folder.
+     3. This section uses the same .reveal scroll-in-view class
+        your main.js already handles — no extra JS needed.
+     4. Duplicate a .certification-card block for each real
+        certificate, and edit the title / issuer / date / link.
+        If you go past 6 cards, add matching
+        :nth-child(7), :nth-child(8)... delay rules at the
+        bottom of certifications.css so the stagger keeps working.
+     5. Add assets/js/certifications.js (after content-loader.js)
+        and the .cert-modal markup from achievements.html so
+        clicking a card opens the description / PDF popup.
+     ============================================================ -->
+
+<section class="certifications-section" id="certifications">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="eyebrow-tag">Certifications</span>
+      <h2>Courses &amp; Certifications</h2>
+      <p>Certificates earned through self-paced learning and structured courses.</p>
+    </div>
+
+    <div class="certifications-grid">
+
+      <!-- Example card 1 — duplicate this block per certificate -->
+      <div class="certification-card reveal">
+        <div class="certification-top">
+          <div class="certification-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 4.86L20 7.7l-4 3.9.95 5.5L12 14.6l-4.95 2.5L8 11.6l-4-3.9 5.6-.84L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="certification-date">2026</span>
+        </div>
+        <h3>Certificate Title</h3>
+        <p class="certification-issuer">Issued by Organization Name</p>
+        <a class="certification-link" href="#" target="_blank" rel="noopener">
+          View Credential
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- Example card 2 -->
+      <div class="certification-card reveal">
+        <div class="certification-top">
+          <div class="certification-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 4.86L20 7.7l-4 3.9.95 5.5L12 14.6l-4.95 2.5L8 11.6l-4-3.9 5.6-.84L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="certification-date">2026</span>
+        </div>
+        <h3>Certificate Title</h3>
+        <p class="certification-issuer">Issued by Organization Name</p>
+        <a class="certification-link" href="#" target="_blank" rel="noopener">
+          View Credential
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- Example card 3 -->
+      <div class="certification-card reveal">
+        <div class="certification-top">
+          <div class="certification-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 4.86L20 7.7l-4 3.9.95 5.5L12 14.6l-4.95 2.5L8 11.6l-4-3.9 5.6-.84L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="certification-date">2026</span>
+        </div>
+        <h3>Certificate Title</h3>
+        <p class="certification-issuer">Issued by Organization Name</p>
+        <a class="certification-link" href="#" target="_blank" rel="noopener">
+          View Credential
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+/* ============================================================
+   THEME SYSTEM
+   Each theme overrides the same set of CSS variables defined
+   in base.css. Applied by setting data-theme on <html> —
+   content-loader.js does this on every page based on the
+   theme saved in the Admin Panel.
+   ============================================================ */
+
+html[data-theme="charcoal-orange"] {
+  /* This is the default look already defined in base.css — listed
+     explicitly so it's a real switchable option, not just "no theme". */
+  --bg-void:      #0E0E12;
+  --bg-charcoal:  #16161C;
+  --bg-panel:     #1C1C24;
+  --bg-panel-alt: #212129;
+  --orange:      #FF7A3D;
+  --orange-dim:  #C9581F;
+  --blue:        #2FB8FF;
+  --blue-dim:    #1A7FB0;
+  --orange-glow: rgba(255, 122, 61, 0.35);
+  --blue-glow:   rgba(47, 184, 255, 0.30);
+}
+
+html[data-theme="midnight-blue"] {
+  --bg-void:      #0A0E1A;
+  --bg-charcoal:  #101524;
+  --bg-panel:     #161C2E;
+  --bg-panel-alt: #1B2236;
+  --orange:      #4C7DFF;
+  --orange-dim:  #3358C9;
+  --blue:        #34E0D8;
+  --blue-dim:    #1FA69E;
+  --orange-glow: rgba(76, 125, 255, 0.35);
+  --blue-glow:   rgba(52, 224, 216, 0.28);
+}
+
+html[data-theme="slate-purple"] {
+  --bg-void:      #100E17;
+  --bg-charcoal:  #16131F;
+  --bg-panel:     #1C1826;
+  --bg-panel-alt: #221D2E;
+  --orange:      #B084F5;
+  --orange-dim:  #7E56C4;
+  --blue:        #FF6FB5;
+  --blue-dim:    #C94F8B;
+  --orange-glow: rgba(176, 132, 245, 0.35);
+  --blue-glow:   rgba(255, 111, 181, 0.28);
+}
+
+html[data-theme="emerald-dark"] {
+  --bg-void:      #0B1210;
+  --bg-charcoal:  #111A17;
+  --bg-panel:     #16211D;
+  --bg-panel-alt: #1B2723;
+  --orange:      #2FD98A;
+  --orange-dim:  #1FA669;
+  --blue:        #3FC7E8;
+  --blue-dim:    #2691A8;
+  --orange-glow: rgba(47, 217, 138, 0.32);
+  --blue-glow:   rgba(63, 199, 232, 0.28);
+}

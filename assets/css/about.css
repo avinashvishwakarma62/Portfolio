@@ -1,0 +1,258 @@
+/* ============================================================
+   About page
+   ============================================================ */
+
+.about-hero {
+  padding: 9rem 0 2rem;
+}
+
+.about-hero .section-head { max-width: 640px; }
+
+/* ---------- Narrative ---------- */
+.story {
+  padding-top: 1rem;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.story-aside {
+  position: sticky;
+  top: 7rem;
+}
+
+.story-aside .eyebrow-tag { margin-bottom: 1rem; }
+
+.story-aside h2 {
+  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+  margin-bottom: 1.2rem;
+}
+
+.story-aside p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 40ch;
+}
+
+.story-body p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--text-primary);
+  margin-bottom: 1.6rem;
+  max-width: 68ch;
+}
+
+.story-body p:last-child { margin-bottom: 0; }
+
+.story-highlight {
+  border-left: 2px solid var(--orange);
+  padding-left: 1.4rem;
+  margin: 2.4rem 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  max-width: 56ch;
+}
+
+@media (max-width: 900px) {
+  .story-grid { grid-template-columns: 1fr; }
+  .story-aside { position: static; margin-bottom: 1rem; }
+}
+
+/* ---------- Timeline ---------- */
+.timeline-section { border-top: 1px solid var(--line); }
+
+.timeline {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--orange), var(--blue) 60%, transparent);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3.2rem;
+  padding-bottom: 2.8rem;
+}
+
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--bg-void);
+  border: 2px solid var(--orange);
+  box-shadow: 0 0 0 5px var(--bg-void);
+}
+
+.timeline-item:nth-child(even) .timeline-dot { border-color: var(--blue); }
+
+.timeline-item.is-current .timeline-dot {
+  background: var(--orange);
+  box-shadow: 0 0 0 5px var(--bg-void), 0 0 16px 2px var(--orange-glow);
+}
+
+.timeline-content {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  transition: border-color 0.4s ease, transform 0.4s var(--ease-out);
+}
+
+.timeline-content:hover {
+  border-color: var(--line-strong);
+  transform: translateX(4px);
+}
+
+.timeline-step {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.timeline-item:nth-child(even) .timeline-step { color: var(--blue); }
+
+.timeline-content h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.timeline-item.is-current .timeline-content {
+  border-color: var(--orange);
+}
+
+/* ---------- Skills & proficiency ---------- */
+.skills-proficiency { border-top: 1px solid var(--line); }
+
+.proficiency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.proficiency-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  transition: transform 0.4s var(--ease-out), border-color 0.4s ease, background 0.4s ease;
+}
+
+.proficiency-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--line-strong);
+  background: var(--bg-panel-alt);
+}
+
+.proficiency-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.proficiency-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255,122,61,0.16), rgba(47,184,255,0.12));
+  color: var(--orange);
+}
+
+.proficiency-card:nth-child(even) .proficiency-icon { color: var(--blue); }
+
+.proficiency-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: 1px solid var(--line-strong);
+}
+
+.badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-advanced {
+  color: var(--orange);
+  border-color: rgba(255,122,61,0.4);
+  background: rgba(255,122,61,0.08);
+}
+.badge-advanced::before { background: var(--orange); }
+
+.badge-intermediate {
+  color: var(--blue);
+  border-color: rgba(47,184,255,0.4);
+  background: rgba(47,184,255,0.08);
+}
+.badge-intermediate::before { background: var(--blue); }
+
+.badge-beginner {
+  color: var(--text-secondary);
+  border-color: var(--line-strong);
+  background: rgba(242,241,237,0.04);
+}
+.badge-beginner::before { background: var(--text-secondary); }
+
+@media (max-width: 900px) {
+  .proficiency-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .proficiency-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Staggered reveal delays (timeline items & skill cards) ---------- */
+.timeline-item.reveal:nth-child(1),
+.proficiency-card.reveal:nth-child(1) { transition-delay: 0ms; }
+.timeline-item.reveal:nth-child(2),
+.proficiency-card.reveal:nth-child(2) { transition-delay: 80ms; }
+.timeline-item.reveal:nth-child(3),
+.proficiency-card.reveal:nth-child(3) { transition-delay: 160ms; }
+.timeline-item.reveal:nth-child(4),
+.proficiency-card.reveal:nth-child(4) { transition-delay: 240ms; }
+.timeline-item.reveal:nth-child(5),
+.proficiency-card.reveal:nth-child(5) { transition-delay: 320ms; }
+.timeline-item.reveal:nth-child(6),
+.proficiency-card.reveal:nth-child(6) { transition-delay: 400ms; }
+.proficiency-card.reveal:nth-child(7) { transition-delay: 480ms; }
+.proficiency-card.reveal:nth-child(8) { transition-delay: 560ms; }
