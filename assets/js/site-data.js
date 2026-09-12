@@ -27,8 +27,8 @@ const DEFAULT_SITE_DATA = {
   },
 
   images: {
-    profile: 'assets/img/profile-placeholder.svg'
-  },
+  profile: 'assets/img/Profile Pic.jpeg'
+},
 
   home: {
     eyebrow: 'CSE Student \u00B7 Aspiring Software Developer',
@@ -86,13 +86,82 @@ const DEFAULT_SITE_DATA = {
   },
 
   certifications: {
-    eyebrow: 'Certifications',
-    heading: 'Courses & Certifications',
-    intro: 'Certificates earned through self-paced learning and structured courses.',
-    items: [
-      { id: 'cert-1', title: 'Certificate Title', issuer: 'Issued by Organization Name', date: '2026', link: '', description: '', pdf: '', pdfName: '' }
-    ]
-  },
+  eyebrow: 'Certifications',
+  heading: 'Courses & Certifications',
+  intro: 'Certificates earned through self-paced learning and structured courses.',
+  items: [
+    {
+      id: 'cert-1',
+      title: 'Amrita Devi Foundation Internship',
+      issuer: 'Amrita Devi Foundation',
+      date: '2026',
+      link: '',
+      description: 'Certificate of completion for the Amrita Devi Foundation internship.',
+      pdf: 'assets/certificates/Amrita Devi Internship.pdf',
+      pdfName: 'Amrita Devi Internship.pdf'
+    },
+    {
+      id: 'cert-2',
+      title: 'AWS Certificate',
+      issuer: 'Amazon Web Services',
+      date: '2026',
+      link: '',
+      description: 'Certificate related to AWS learning and cloud fundamentals.',
+      pdf: 'assets/certificates/AWS.pdf',
+      pdfName: 'AWS.pdf'
+    },
+    {
+      id: 'cert-3',
+      title: 'Code Sprint 2.0',
+      issuer: 'Code Sprint',
+      date: '2026',
+      link: '',
+      description: 'Certificate of participation/completion for Code Sprint 2.0.',
+      pdf: 'assets/certificates/Code Sprint 2.0.pdf',
+      pdfName: 'Code Sprint 2.0.pdf'
+    },
+    {
+      id: 'cert-4',
+      title: 'Digital Edge 101',
+      issuer: 'Digital Edge 101',
+      date: '2026',
+      link: '',
+      description: 'Certificate for Digital Edge 101 learning and development.',
+      pdf: 'assets/certificates/Digital Edge 101.pdf',
+      pdfName: 'Digital Edge 101.pdf'
+    },
+    {
+      id: 'cert-5',
+      title: 'DSA - Semester II',
+      issuer: 'NIET',
+      date: '2026',
+      link: '',
+      description: 'Certificate related to Data Structures and Algorithms coursework.',
+      pdf: 'assets/certificates/DSA - Sem II.pdf',
+      pdfName: 'DSA - Sem II.pdf'
+    },
+    {
+      id: 'cert-6',
+      title: 'Introduction to Cybersecurity',
+      issuer: 'Cisco',
+      date: '2026',
+      link: '',
+      description: 'Certificate for completing an introductory cybersecurity course.',
+      pdf: 'assets/certificates/Introduction_to_Cybersecurity.pdf',
+      pdfName: 'Introduction_to_Cybersecurity.pdf'
+    },
+    {
+      id: 'cert-7',
+      title: 'TATA Forage',
+      issuer: 'Tata / Forage',
+      date: '2026',
+      link: '',
+      description: 'Certificate earned through the Tata Forage virtual experience.',
+      pdf: 'assets/certificates/TATA Forage.pdf',
+      pdfName: 'TATA Forage.pdf'
+    }
+  ]
+},
 
   projects: {
     eyebrow: 'Full portfolio',

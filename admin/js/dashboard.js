@@ -363,21 +363,38 @@ function populateCertifications() {
     });
   });
   wrap.querySelectorAll('[data-cert-pdf]').forEach(input => {
-    input.addEventListener('change', async () => {
-      const i = Number(input.dataset.certPdf);
-      const file = input.files[0];
-      if (!file) return;
-      try {
-        const dataUrl = await fileToDataURL(file, 'application/pdf', MAX_CERT_PDF_BYTES);
-        workingData.certifications.items[i].pdf = dataUrl;
-        workingData.certifications.items[i].pdfName = file.name;
-        populateCertifications();
-        showToast('Certificate PDF attached — click Save Changes to publish it.');
-      } catch (err) {
-        showToast(err.message);
-      }
-    });
+  input.addEventListener('change', () => {
+    const i = Number(input.dataset.certPdf);
+    const file = input.files[0];
+
+    if (!file) return;
+
+    if (file.type !== 'application/pdf') {
+      showToast('Please choose a PDF file.');
+      return;
+    }
+
+    /*
+     * IMPORTANT:
+     * The browser cannot physically copy the PDF into the project.
+     * The PDF must already exist inside:
+     *
+     * assets/certificates/
+     *
+     * We save only the relative project path.
+     */
+    workingData.certifications.items[i].pdf =
+      `assets/certificates/${file.name}`;
+
+    workingData.certifications.items[i].pdfName = file.name;
+
+    populateCertifications();
+
+    showToast(
+      `${file.name} selected. Make sure it is inside assets/certificates/, then click Save Changes.`
+    );
   });
+});
   wrap.querySelectorAll('[data-remove-cert-pdf]').forEach(btn => {
     btn.addEventListener('click', () => {
       const i = Number(btn.dataset.removeCertPdf);
@@ -533,16 +550,26 @@ function populateImages() {
   preview.innerHTML = `<img src="${workingData.images.profile}" alt="">`;
 }
 
-document.getElementById('profile-photo-input').addEventListener('change', async (e) => {
+document.getElementById('profile-photo-input').addEventListener('change', (e) => {
   const file = e.target.files[0];
   if (!file) return;
-  try {
-    const dataUrl = await fileToCompressedDataURL(file, 900, 0.8);
-    workingData.images.profile = dataUrl;
-    populateImages();
-  } catch (err) {
-    showToast(err.message);
-  }
+
+  /*
+   * IMPORTANT:
+   * The browser cannot copy a selected file into the project folder.
+   * Therefore the selected image must already exist inside:
+   *
+   * assets/img/
+   *
+   * We save only its project-relative path.
+   */
+  workingData.images.profile = `assets/img/${file.name}`;
+
+  populateImages();
+
+  showToast(
+    `Profile photo selected: ${file.name}. Make sure this file is inside assets/img/, then click Save.`
+  );
 });
 
 document.getElementById('save-profile-photo-btn').addEventListener('click', () => {
