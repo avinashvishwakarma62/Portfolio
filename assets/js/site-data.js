@@ -272,7 +272,7 @@ const DEFAULT_SITE_DATA = {
   },
 
 
-  /* ==========================================================
+    /* ==========================================================
      CERTIFICATIONS
      ========================================================== */
 
@@ -285,128 +285,117 @@ const DEFAULT_SITE_DATA = {
     intro:
       'Certificates earned through self-paced learning and structured courses.',
 
-    certifications: {
+    items: [
 
-  eyebrow: 'Certifications',
+      {
+        id: 'cert-1',
+        title: 'Amrita Devi Foundation Internship',
+        issuer: 'Amrita Devi Foundation',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate of completion for internship and social-impact activities conducted with Amrita Devi Foundation.',
+        pdf: 'assets/certificates/amrita-devi.pdf',
+        pdfName: 'Amrita Devi Foundation Internship.pdf'
+      },
 
-  heading: 'Courses & Certifications',
+      {
+        id: 'cert-2',
+        title: 'AI Certificate',
+        issuer: 'AI / Artificial Intelligence',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate related to artificial intelligence and technical learning.',
+        pdf: 'assets/certificates/avinash.pdf',
+        pdfName: 'AI Certificate.pdf'
+      },
 
-  intro:
-    'Certificates earned through self-paced learning and structured courses.',
+      {
+        id: 'cert-3',
+        title: 'AWS Certification',
+        issuer: 'Amazon Web Services',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate demonstrating learning and foundational knowledge related to AWS.',
+        pdf: 'assets/certificates/aws.pdf',
+        pdfName: 'AWS Certificate.pdf'
+      },
 
-  items: [
+      {
+        id: 'cert-4',
+        title: 'Code Sprint 2.0',
+        issuer: 'Code Sprint',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate received for participation and completion of Code Sprint 2.0.',
+        pdf: 'assets/certificates/code-sprint.pdf',
+        pdfName: 'Code Sprint 2.0.pdf'
+      },
 
-    {
-      id: 'cert-1',
-      title: 'Amrita Devi Foundation Internship',
-      issuer: 'Amrita Devi Foundation',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate of completion for internship and social-impact activities conducted with Amrita Devi Foundation.',
-      pdf: 'assets/certificates/amrita-devi.pdf',
-      pdfName: 'Amrita Devi Foundation Internship.pdf'
-    },
+      {
+        id: 'cert-5',
+        title: 'HTML Basics',
+        issuer: 'IBM SkillsBuild',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate of completion for HTML Basics through IBM SkillsBuild.',
+        pdf: 'assets/certificates/skillsbuild-html.pdf',
+        pdfName: 'HTML Basics - IBM SkillsBuild.pdf'
+      },
 
-    {
-      id: 'cert-2',
-      title: 'AI Certificate',
-      issuer: 'AI / Artificial Intelligence',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate related to artificial intelligence and technical learning.',
-      pdf: 'assets/certificates/avinash.pdf',
-      pdfName: 'AI Certificate.pdf'
-    },
+      {
+        id: 'cert-6',
+        title: 'Digital Edge 101',
+        issuer: 'Digital Edge',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate earned through Digital Edge 101 learning activities.',
+        pdf: 'assets/certificates/digital-edge.pdf',
+        pdfName: 'Digital Edge 101.pdf'
+      },
 
-    {
-      id: 'cert-3',
-      title: 'AWS Certification',
-      issuer: 'Amazon Web Services',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate demonstrating learning and foundational knowledge related to AWS.',
-      pdf: 'assets/certificates/aws.pdf',
-      pdfName: 'AWS Certificate.pdf'
-    },
+      {
+        id: 'cert-7',
+        title: 'Data Structures & Algorithms',
+        issuer: 'Academic / Technical Learning',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate related to Data Structures and Algorithms learning.',
+        pdf: 'assets/certificates/dsa.pdf',
+        pdfName: 'DSA - Sem II.pdf'
+      },
 
-    {
-      id: 'cert-4',
-      title: 'Code Sprint 2.0',
-      issuer: 'Code Sprint',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate received for participation and completion of Code Sprint 2.0.',
-      pdf: 'assets/certificates/code-sprint.pdf',
-      pdfName: 'Code Sprint 2.0.pdf'
-    },
+      {
+        id: 'cert-8',
+        title: 'Introduction to Cybersecurity',
+        issuer: 'Cybersecurity',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate of completion for introductory cybersecurity learning.',
+        pdf: 'assets/certificates/cybersecurity.pdf',
+        pdfName: 'Introduction to Cybersecurity.pdf'
+      },
 
-    {
-      id: 'cert-5',
-      title: 'HTML Basics',
-      issuer: 'IBM SkillsBuild',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate of completion for HTML Basics through IBM SkillsBuild.',
-      pdf: 'assets/certificates/skillsbuild-html.pdf',
-      pdfName: 'HTML Basics - IBM SkillsBuild.pdf'
-    },
+      {
+        id: 'cert-9',
+        title: 'TATA Forage',
+        issuer: 'TATA / Forage',
+        date: '2026',
+        link: '',
+        description:
+          'Certificate earned through a TATA Forage learning and career experience.',
+        pdf: 'assets/certificates/tata-forage.pdf',
+        pdfName: 'TATA Forage.pdf'
+      }
 
-    {
-      id: 'cert-6',
-      title: 'Digital Edge 101',
-      issuer: 'Digital Edge',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate earned through Digital Edge 101 learning activities.',
-      pdf: 'assets/certificates/digital-edge.pdf',
-      pdfName: 'Digital Edge 101.pdf'
-    },
-
-    {
-      id: 'cert-7',
-      title: 'Data Structures & Algorithms',
-      issuer: 'Academic / Technical Learning',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate related to Data Structures and Algorithms learning.',
-      pdf: 'assets/certificates/dsa.pdf',
-      pdfName: 'DSA - Sem II.pdf'
-    },
-
-    {
-      id: 'cert-8',
-      title: 'Introduction to Cybersecurity',
-      issuer: 'Cybersecurity',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate of completion for introductory cybersecurity learning.',
-      pdf: 'assets/certificates/cybersecurity.pdf',
-      pdfName: 'Introduction to Cybersecurity.pdf'
-    },
-
-    {
-      id: 'cert-9',
-      title: 'TATA Forage',
-      issuer: 'TATA / Forage',
-      date: '2026',
-      link: '',
-      description:
-        'Certificate earned through a TATA Forage learning and career experience.',
-      pdf: 'assets/certificates/tata-forage.pdf',
-      pdfName: 'TATA Forage.pdf'
-    }
-
-  ]
-
-},
+    ]
 
   },
 
