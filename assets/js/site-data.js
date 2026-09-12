@@ -445,7 +445,8 @@ const DEFAULT_SITE_DATA = {
           'HTML, CSS, JavaScript, Flask, SQLite',
 
         image:
-          'assets/img/projects/ai-project-managemet-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
+          'assets/img/projects/college-event.webp'
+        
       },
 
 
