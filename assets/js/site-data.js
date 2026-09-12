@@ -430,24 +430,19 @@ const DEFAULT_SITE_DATA = {
       /* ---------- PROJECT 6 ---------- */
 
       {
-        id: 'proj-6',
-        category: 'web',
-        categoryLabel: 'Web Development',
-        glyph: 'EM',
+  id: 'proj-6',
+  category: 'web',
+  categoryLabel: 'Web Development',
+  glyph: 'EM',
 
-        title:
-          'College Event Management Portal',
+  title: 'College Event Management Portal',
 
-        desc:
-          'A portal for students to browse upcoming college events, register with one click, and for organizers to manage registrations and announcements.',
+  desc: 'A portal for students to browse upcoming college events, register with one click, and for organizers to manage registrations and announcements.',
 
-        tags:
-          'HTML, CSS, JavaScript, Flask, SQLite',
+  tags: 'HTML, CSS, JavaScript, Flask, SQLite',
 
-        image:
-          'assets/img/projects/college-event.webp'
-        
-      },
+  image: 'assets/img/projects/college-event.webp'
+},
 
 
       /* ---------- PROJECT 7 ---------- */
