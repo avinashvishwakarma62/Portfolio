@@ -51,6 +51,9 @@ const DEFAULT_SITE_DATA = {
 
     tagline: 'Building ideas into practical digital solutions.',
 
+
+    /* ---------- HOME STATISTICS ---------- */
+
     stats: [
       {
         value: 8.52,
@@ -78,10 +81,8 @@ const DEFAULT_SITE_DATA = {
       }
     ],
 
-    /*
-     * Featured project images
-     * Exact filenames from assets/img/projects/
-     */
+
+    /* ---------- FEATURED PROJECTS ---------- */
 
     featured: [
 
@@ -96,7 +97,7 @@ const DEFAULT_SITE_DATA = {
         title: 'Automated Attendance Monitoring System',
         tag: 'Automation',
         glyph: 'AM',
-        image: 'assets/img/projects/Automated Attendance System - A Complete Guide for HR Professionals.webp'
+        image: 'assets/img/projects/Automated Attendance System – A Complete Guide for HR Professionals.webp'
       },
 
       {
@@ -124,7 +125,7 @@ const DEFAULT_SITE_DATA = {
         title: 'Other software & AI projects',
         tag: 'More work',
         glyph: '+',
-        image: 'assets/img/projects/ai-project-management-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
+        image: 'assets/img/projects/ai-project-managemet-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
       }
 
     ]
@@ -142,7 +143,8 @@ const DEFAULT_SITE_DATA = {
 
     heading: 'The story behind the code',
 
-    intro: "A bit about how I got into software development, and where I'm headed next.",
+    intro:
+      "A bit about how I got into software development, and where I'm headed next.",
 
     paragraphs: [
 
@@ -239,16 +241,19 @@ const DEFAULT_SITE_DATA = {
         id: 'ach-1',
         title: 'Smart India Hackathon 2026 — Project Participation',
         year: '2026',
-        by: "Smart India Hackathon / Ministry of Education's Innovation Cell",
+        by:
+          "Smart India Hackathon / Ministry of Education's Innovation Cell",
         why:
           'Worked on an AI-based solution for the AI-Based Fake Identity & Document Screening System, focusing on using technology to address real-world identity and document fraud challenges.'
       },
 
       {
         id: 'ach-2',
-        title: 'Amrita Devi Foundation — Internship & Social Impact Work',
+        title:
+          'Amrita Devi Foundation — Internship & Social Impact Work',
         year: '2026',
-        by: 'Amrita Devi Foundation, in collaboration with NIET',
+        by:
+          'Amrita Devi Foundation, in collaboration with NIET',
         why:
           'Completed an internship involving digital outreach, awareness activities, content creation, and social-impact initiatives, gaining practical experience beyond the classroom.'
       },
@@ -313,125 +318,197 @@ const DEFAULT_SITE_DATA = {
 
     items: [
 
+      /* ---------- PROJECT 1 ---------- */
+
       {
         id: 'proj-1',
         category: 'ai',
         categoryLabel: 'AI & Machine Learning',
         glyph: 'AI',
-        title: 'AI-Based Fake Identity & Document Screening System',
+
+        title:
+          'AI-Based Fake Identity & Document Screening System',
+
         desc:
           'A screening tool that analyzes uploaded identity documents to flag inconsistencies and signs of tampering, built to support faster, more reliable verification.',
+
         tags:
           'Python, Machine Learning, OpenCV, Image Processing',
-        image: 'assets/img/projects/Fake Identity.webp'
+
+        image:
+          'assets/img/projects/Fake Identity.webp'
       },
+
+
+      /* ---------- PROJECT 2 ---------- */
 
       {
         id: 'proj-2',
         category: 'ai',
         categoryLabel: 'AI & Machine Learning',
         glyph: 'AM',
-        title: 'Automated Attendance Monitoring System',
+
+        title:
+          'Automated Attendance Monitoring System',
+
         desc:
           'A face-recognition based attendance system that identifies students from a live camera feed and logs attendance automatically, cutting manual roll-call time.',
+
         tags:
           'Python, OpenCV, Face Recognition, SQLite',
+
         image:
-          'assets/img/projects/Automated Attendance System - A Complete Guide for HR Professionals.webp'
+          'assets/img/projects/Automated Attendance System – A Complete Guide for HR Professionals.webp'
       },
+
+
+      /* ---------- PROJECT 3 ---------- */
 
       {
         id: 'proj-3',
         category: 'ai',
         categoryLabel: 'AI & Machine Learning',
         glyph: 'HD',
-        title: 'Handwritten Digit Recognition',
+
+        title:
+          'Handwritten Digit Recognition',
+
         desc:
           'A machine learning model trained on the MNIST dataset to classify handwritten digits, built to explore neural networks and image classification fundamentals.',
+
         tags:
           'Python, TensorFlow, Neural Networks, MNIST',
+
         image: ''
       },
+
+
+      /* ---------- PROJECT 4 ---------- */
 
       {
         id: 'proj-4',
         category: 'web',
         categoryLabel: 'Web Development',
         glyph: 'FR',
-        title: 'Fee Receipt & Tracking System',
+
+        title:
+          'Fee Receipt & Tracking System',
+
         desc:
           'A web application for colleges to generate fee receipts, track student payment history, and monitor pending dues from a single dashboard.',
+
         tags:
           'HTML, CSS, JavaScript, Flask',
+
         image:
           'assets/img/projects/fees-management.webp'
       },
+
+
+      /* ---------- PROJECT 5 ---------- */
 
       {
         id: 'proj-5',
         category: 'web',
         categoryLabel: 'Web Development',
         glyph: 'RB',
-        title: 'Resume Builder',
+
+        title:
+          'Resume Builder',
+
         desc:
           'A browser-based tool that lets users fill in their details and instantly generate a clean, downloadable resume from multiple layout templates.',
+
         tags:
           'HTML, CSS, JavaScript',
+
         image:
           'assets/img/projects/Resume Builder.webp'
       },
+
+
+      /* ---------- PROJECT 6 ---------- */
 
       {
         id: 'proj-6',
         category: 'web',
         categoryLabel: 'Web Development',
         glyph: 'EM',
-        title: 'College Event Management Portal',
+
+        title:
+          'College Event Management Portal',
+
         desc:
           'A portal for students to browse upcoming college events, register with one click, and for organizers to manage registrations and announcements.',
+
         tags:
           'HTML, CSS, JavaScript, Flask, SQLite',
+
         image:
-          'assets/img/projects/ai-project-management-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
+          'assets/img/projects/ai-project-managemet-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
       },
+
+
+      /* ---------- PROJECT 7 ---------- */
 
       {
         id: 'proj-7',
         category: 'other',
         categoryLabel: 'Other Projects',
         glyph: 'LA',
-        title: 'Legal Awareness for Common Citizens',
+
+        title:
+          'Legal Awareness for Common Citizens',
+
         desc:
           'A social-impact initiative and companion resource that breaks down everyday legal rights and procedures into plain, accessible language for common citizens.',
+
         tags:
           'Research, Content Design, Public Outreach',
+
         image:
           'assets/img/projects/Legal-Awareness-Campaigns-780x470.webp'
       },
+
+
+      /* ---------- PROJECT 8 ---------- */
 
       {
         id: 'proj-8',
         category: 'other',
         categoryLabel: 'Other Projects',
         glyph: 'PV',
-        title: 'Pathfinding Algorithm Visualizer',
+
+        title:
+          'Pathfinding Algorithm Visualizer',
+
         desc:
           "An interactive grid-based visualizer that shows how algorithms like Dijkstra's and A* search for the shortest path step by step.",
+
         tags:
           'Java, Data Structures & Algorithms, Swing',
+
         image: ''
       },
+
+
+      /* ---------- PROJECT 9 ---------- */
 
       {
         id: 'proj-9',
         category: 'other',
         categoryLabel: 'Other Projects',
         glyph: 'LM',
-        title: 'Library Management System',
+
+        title:
+          'Library Management System',
+
         desc:
           'A desktop application for managing book inventory, member records, and issue or return transactions in a college library setting.',
+
         tags:
           'Java, OOP, MySQL',
+
         image:
           'assets/img/projects/Digital-Library-Management-System.webp'
       }
@@ -466,162 +543,55 @@ const DEFAULT_SITE_DATA = {
 function siteDataDeepMerge(base, override) {
 
   if (Array.isArray(base)) {
-    return Array.isArray(override) ? override : base;
+
+    return Array.isArray(override)
+      ? override
+      : base;
+
   }
 
-  if (typeof base === 'object' && base !== null) {
 
-    const result = { ...base };
+  if (
+    typeof base === 'object' &&
+    base !== null
+  ) {
 
-    if (typeof override === 'object' && override !== null) {
+    const result = {
+      ...base
+    };
+
+
+    if (
+      typeof override === 'object' &&
+      override !== null
+    ) {
 
       Object.keys(override).forEach(key => {
 
-        result[key] = key in base
-          ? siteDataDeepMerge(base[key], override[key])
-          : override[key];
+        result[key] =
+          key in base
+
+            ? siteDataDeepMerge(
+                base[key],
+                override[key]
+              )
+
+            : override[key];
 
       });
 
     }
 
+
     return result;
+
   }
+
 
   return override !== undefined
     ? override
     : base;
-}
 
-
-/* ============================================================
-   IMAGE FALLBACKS
-   ------------------------------------------------------------
-   This fixes old localStorage data where image fields were
-   saved as empty strings.
-   ============================================================ */
-
-function applyImageFallbacks(data) {
-
-  /* ---------- Profile image ---------- */
-
-  if (
-    !data.images ||
-    !data.images.profile ||
-    data.images.profile === 'assets/img/profile-placeholder.svg'
-  ) {
-
-    data.images = data.images || {};
-
-    data.images.profile =
-      'assets/img/Profile Pic.jpeg';
-
-  }
-
-
-  /* ---------- Featured project images ---------- */
-
-  const featuredImages = [
-
-    'assets/img/projects/fees-management.webp',
-
-    'assets/img/projects/Automated Attendance System - A Complete Guide for HR Professionals.webp',
-
-    'assets/img/projects/Legal-Awareness-Campaigns-780x470.webp',
-
-    'assets/img/projects/Fake Identity.webp',
-
-    'assets/img/projects/Resume Builder.webp',
-
-    'assets/img/projects/ai-project-management-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp'
-
-  ];
-
-
-  if (
-    data.home &&
-    Array.isArray(data.home.featured)
-  ) {
-
-    data.home.featured.forEach((project, index) => {
-
-      if (
-        project &&
-        (!project.image || project.image.trim() === '') &&
-        featuredImages[index]
-      ) {
-
-        project.image = featuredImages[index];
-
-      }
-
-    });
-
-  }
-
-
-  /* ---------- Full project images ---------- */
-
-  const projectImages = {
-
-    'proj-1':
-      'assets/img/projects/Fake Identity.webp',
-
-    'proj-2':
-      'assets/img/projects/Automated Attendance System - A Complete Guide for HR Professionals.webp',
-
-    'proj-3':
-      '',
-
-    'proj-4':
-      'assets/img/projects/fees-management.webp',
-
-    'proj-5':
-      'assets/img/projects/Resume Builder.webp',
-
-    'proj-6':
-      'assets/img/projects/ai-project-management-software-tools-cover-0ed50-7311-4d8c-ae97-b2e1217af593.webp',
-
-    'proj-7':
-      'assets/img/projects/Legal-Awareness-Campaigns-780x470.webp',
-
-    'proj-8':
-      '',
-
-    'proj-9':
-      'assets/img/projects/Digital-Library-Management-System.webp'
-
-  };
-
-
-  if (
-    data.projects &&
-    Array.isArray(data.projects.items)
-  ) {
-
-    data.projects.items.forEach(project => {
-
-      if (!project) return;
-
-      const fallback =
-        projectImages[project.id];
-
-      if (
-        fallback &&
-        (!project.image ||
-         project.image.trim() === '')
-      ) {
-
-        project.image = fallback;
-
-      }
-
-    });
-
-  }
-
-
-  return data;
 }
 
 
@@ -634,13 +604,16 @@ function getSiteData() {
   try {
 
     const raw =
-      localStorage.getItem(SITE_DATA_KEY);
+      localStorage.getItem(
+        SITE_DATA_KEY
+      );
+
 
     if (!raw) {
 
-      return applyImageFallbacks(
-        JSON.parse(
-          JSON.stringify(DEFAULT_SITE_DATA)
+      return JSON.parse(
+        JSON.stringify(
+          DEFAULT_SITE_DATA
         )
       );
 
@@ -651,14 +624,10 @@ function getSiteData() {
       JSON.parse(raw);
 
 
-    const merged =
-      siteDataDeepMerge(
-        DEFAULT_SITE_DATA,
-        saved
-      );
-
-
-    return applyImageFallbacks(merged);
+    return siteDataDeepMerge(
+      DEFAULT_SITE_DATA,
+      saved
+    );
 
 
   } catch (e) {
@@ -669,9 +638,9 @@ function getSiteData() {
     );
 
 
-    return applyImageFallbacks(
-      JSON.parse(
-        JSON.stringify(DEFAULT_SITE_DATA)
+    return JSON.parse(
+      JSON.stringify(
+        DEFAULT_SITE_DATA
       )
     );
 
@@ -693,6 +662,7 @@ function saveSiteData(data) {
       JSON.stringify(data)
     );
 
+
     return true;
 
   } catch (e) {
@@ -701,6 +671,7 @@ function saveSiteData(data) {
       'Site data could not be saved.',
       e
     );
+
 
     return false;
 
@@ -755,6 +726,7 @@ function fileToCompressedDataURL(
         );
 
         return;
+
       }
 
 
@@ -923,6 +895,7 @@ function fileToDataURL(
         );
 
         return;
+
       }
 
 
@@ -938,6 +911,7 @@ function fileToDataURL(
         );
 
         return;
+
       }
 
 
@@ -955,6 +929,7 @@ function fileToDataURL(
         );
 
         return;
+
       }
 
 
