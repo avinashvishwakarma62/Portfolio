@@ -198,8 +198,26 @@
   display: flex;
   align-items: baseline;
   gap: 0.15rem;
-  color: var(--text-primary);
-  background: none;
+
+  /* FIX */
+  background: none !important;
+  color: var(--text-primary) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.stat-number > span:first-child {
+  display: inline-block !important;
+  color: var(--text-primary) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.stat-number .suffix {
+  font-size: 0.55em;
+  color: var(--orange) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .stat-number .suffix {
